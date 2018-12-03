@@ -5,20 +5,10 @@ import wave
 import scipy.signal as sg
 
 spf = wave.open('XE.wav', 'r')
-# Extract Raw Audio from Wav File
-#
-# signal = spf.readframes(512)
-# signal = np.fromstring(signal, 'Int16')
-# plt.subplot(411)
-# plt.plot(signal)
 
-
-spf.setpos(9000)    # vi tri khung du lieu
+spf.setpos(9512)    # vi tri khung du lieu
 signal = spf.readframes(512)
 signal = np.fromstring(signal, 'Int16')
-
-# data_frame = signal
-
 
 class SampleWaveFFT:
 

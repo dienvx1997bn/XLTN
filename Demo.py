@@ -20,7 +20,3 @@ plt.figure(1)
 plt.title('Signal Wave...')
 plt.plot(signal)
 plt.show()
-
-
-
-
