@@ -6,7 +6,7 @@ from scipy.signal import (freqz, tf2zpk, lfilter)
 class ABC:
     def __init__(self):
         Fk = 1000.0
-        Bk = 100.0
+        Bk = 100.0  #tang Bk dinh tu hon
         self.Fs = 10000.0
 
         Ts = 1/self.Fs
